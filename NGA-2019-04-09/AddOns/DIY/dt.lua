@@ -1,0 +1,26 @@
+MinimapZoomIn:Hide()--隐藏小地图调整键
+MinimapZoomOut:Hide()--隐藏小地图调整键
+MiniMapWorldMapButton:Hide()--世界地图
+MinimapZoneTextButton:Hide()--地图区域文本
+MinimapBorderTop:Hide()--地址背景
+MinimapNorthTag:SetTexture(nil)--小地图指北针
+MiniMapTrackingButtonBorder:Hide()--小地图查询按钮框
+MiniMapTrackingBackground:Hide()--小地图查询按键背景
+GameTimeFrame:Hide()--游戏日历
+MinimapBorder:Hide()--小地图边框
+Minimap:SetMaskTexture([=[Interface\ChatFrame\ChatFrameBackground]=])--小地图形状
+MinimapCluster:SetScale(1.3)--小地图放大
+MinimapCluster:SetPoint("TOPRIGHT", "UIParent", "TOPRIGHT", 16, 21)--小地图定位
+QueueStatusMinimapButtonBorder:Hide()--小地图队伍序列边框
+--邮件按键位置及缩放
+MiniMapMailFrame:ClearAllPoints()
+MiniMapMailFrame:SetPoint("BOTTOMRIGHT",Minimap,7.9,-10)
+MiniMapMailFrame:SetScale(0.8)
+MiniMapMailBorder:SetAlpha(0)
+--系统时间美化
+LoadAddOn("Blizzard_TimeManager")
+TimeManagerClockButton:GetRegions():Hide()
+TimeManagerClockButton:ClearAllPoints()
+TimeManagerClockButton:SetPoint("BOTTOM",0,-13)
+TimeManagerClockTicker:SetFont(STANDARD_TEXT_FONT,10,"OUTLINE")
+TimeManagerClockTicker:SetTextColor(0.8,0.8,0.6,1)
