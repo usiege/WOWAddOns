@@ -1,0 +1,224 @@
+------------------------------------------------------------------------
+r930 | FireSiku | 2020-01-27 08:54:42 +0000 (Mon, 27 Jan 2020) | 1 line
+Changed paths:
+   M /trunk/LUI.lua
+   M /trunk/LUI.toc
+
+Core: Increased Version and updated Patron list.
+------------------------------------------------------------------------
+r929 | FireSiku | 2020-01-27 08:38:55 +0000 (Mon, 27 Jan 2020) | 1 line
+Changed paths:
+   M /trunk/modules/minimap.lua
+
+UIElements: Added Support for moving the AltPowerBar and GroupLootContainer-
+------------------------------------------------------------------------
+r928 | FireSiku | 2020-01-27 08:16:25 +0000 (Mon, 27 Jan 2020) | 1 line
+Changed paths:
+   M /trunk/modules/bags.lua
+   M /trunk/modules/tooltip.lua
+
+Bags/Tooltip: Removed Enable checkbox from the options to prevent accidentally turning it off and not being able to turn it back on. You can still enable/disable these modules like any other.
+------------------------------------------------------------------------
+r927 | FireSiku | 2020-01-27 05:02:24 +0000 (Mon, 27 Jan 2020) | 3 lines
+Changed paths:
+   M /trunk/modules/minimap.lua
+
+Minimap: Minimap Settings tab was looking pretty silly with the removal in previous version.
+UIElements: Re-adjusted Vehicle Indicator to no longer overlap with Capture bar.
+UIElements: Readjusted the tabs so that the Quest Frame is the first tab, since its the most likely to be visible.
+------------------------------------------------------------------------
+r926 | FireSiku | 2020-01-27 04:05:34 +0000 (Mon, 27 Jan 2020) | 2 lines
+Changed paths:
+   M /trunk/modules/minimap.lua
+
+Minimap: Moved MinimapFrames outside of the Minimap options, renamed UI Elements. Kept the code in the minimap file to reduce disruption.
+UIElements: Re-adjusted the default position of the Durability Frame.
+------------------------------------------------------------------------
+r925 | FireSiku | 2020-01-27 03:08:56 +0000 (Mon, 27 Jan 2020) | 1 line
+Changed paths:
+   M /trunk/modules/auras/auras.lua
+
+Auras: Fixed issue using Sharpening Stones on your offhand weapon.
+------------------------------------------------------------------------
+r924 | FireSiku | 2020-01-20 03:00:34 +0000 (Mon, 20 Jan 2020) | 1 line
+Changed paths:
+   M /trunk/LUI.toc
+
+TOC Bump to make some people happy.
+------------------------------------------------------------------------
+r923 | FireSiku | 2020-01-20 02:28:30 +0000 (Mon, 20 Jan 2020) | 3 lines
+Changed paths:
+   M /trunk/modules/minimap.lua
+
+Minimap: Created a template for the MinimapFrames options to make it possible to add more frames to it.
+Minimap: Use friendlier names for the frames that can be moved.
+Minimap: Fixed CaptureBar not moving the bar.
+------------------------------------------------------------------------
+r922 | FireSiku | 2020-01-19 23:48:37 +0000 (Sun, 19 Jan 2020) | 1 line
+Changed paths:
+   M /trunk/modules/frames.lua
+   M /trunk/modules/panels.lua
+
+Panels: Missed a few spots in previous commit. Also, made it so that the top buttons wont change from on/off if the frame wasnt changed.
+------------------------------------------------------------------------
+r921 | FireSiku | 2020-01-19 23:04:12 +0000 (Sun, 19 Jan 2020) | 1 line
+Changed paths:
+   M /trunk/modules/panels.lua
+
+Panels: Additional checks to not Show/Hide protected frames during combat lockdown.
+------------------------------------------------------------------------
+r920 | FireSiku | 2020-01-19 22:18:42 +0000 (Sun, 19 Jan 2020) | 1 line
+Changed paths:
+   M /trunk/modules/datatext.lua
+
+Infotext: Fix Battlenet Invites
+------------------------------------------------------------------------
+r919 | FireSiku | 2019-09-27 03:10:35 +0000 (Fri, 27 Sep 2019) | 1 line
+Changed paths:
+   M /trunk/modules/datatext.lua
+
+Infotext-Friends: Removed additional debug messages that shouldnt have been there. 
+------------------------------------------------------------------------
+r918 | FireSiku | 2019-09-26 15:00:32 +0000 (Thu, 26 Sep 2019) | 1 line
+Changed paths:
+   M /trunk/modules/datatext.lua
+
+- Infotext: Updated for 8.2.5 changes
+------------------------------------------------------------------------
+r917 | FireSiku | 2019-09-25 12:48:47 +0000 (Wed, 25 Sep 2019) | 1 line
+Changed paths:
+   M /trunk/unitframes/plugins/oUF_RaidDebuffs.lua
+
+- Unitframes: Added a safety check in the RaidDebuffs plugin
+------------------------------------------------------------------------
+r916 | FireSiku | 2019-09-16 13:46:56 +0000 (Mon, 16 Sep 2019) | 1 line
+Changed paths:
+   M /trunk/LUI.toc
+
+- Updated TOC and Version.
+------------------------------------------------------------------------
+r915 | FireSiku | 2019-07-01 05:26:52 +0000 (Mon, 01 Jul 2019) | 1 line
+Changed paths:
+   M /trunk/modules/datatext.lua
+
+- Infotext-Friends: Sort friendlist to make sure people playing WoW are on top. This used to be basic function, but Blizzard works in mysterious ways.
+------------------------------------------------------------------------
+r914 | FireSiku | 2019-07-01 03:31:45 +0000 (Mon, 01 Jul 2019) | 1 line
+Changed paths:
+   M /trunk/modules/datatext.lua
+
+- Infotext-Friends: Fix friends listing to no longer show offline friends from the Favorites category. 
+------------------------------------------------------------------------
+r913 | FireSiku | 2019-06-30 04:46:40 +0000 (Sun, 30 Jun 2019) | 1 line
+Changed paths:
+   M /trunk/modules/cooldown/cooldown.lua
+
+- Cooldown: By popular request, added an option to remove the WeakAuras filtering that LUI used.
+------------------------------------------------------------------------
+r912 | FireSiku | 2019-06-30 00:04:21 +0000 (Sun, 30 Jun 2019) | 1 line
+Changed paths:
+   M /trunk/modules/cooldown/cooldown.lua
+
+- Cooldown: Make sure to clear all points before re-adjusting font anchors. Fix an issue with 8.2 Restricted Frames.
+------------------------------------------------------------------------
+r911 | FireSiku | 2019-04-30 16:59:00 +0000 (Tue, 30 Apr 2019) | 1 line
+Changed paths:
+   M /trunk/modules/auras/auras.lua
+
+Auras: Make sure a caster exists before using UnitName(caster)
+------------------------------------------------------------------------
+r910 | FireSiku | 2019-04-30 10:59:50 +0000 (Tue, 30 Apr 2019) | 1 line
+Changed paths:
+   M /trunk/LUI.toc
+
+- TOC and Version Bump
+------------------------------------------------------------------------
+r909 | FireSiku | 2019-04-30 10:58:26 +0000 (Tue, 30 Apr 2019) | 1 line
+Changed paths:
+   M /trunk/modules/cooldown/cooldown.lua
+
+- Cooldown: Fix issues related to objects (or other addons) overwriting LUI's cd timer object
+------------------------------------------------------------------------
+r908 | FireSiku | 2019-04-30 10:56:20 +0000 (Tue, 30 Apr 2019) | 1 line
+Changed paths:
+   M /trunk/modules/auras/auras.lua
+
+- Aura: Fix a rare bug where we cant fetch the buff's caster's name.
+------------------------------------------------------------------------
+r907 | FireSiku | 2019-04-30 10:54:37 +0000 (Tue, 30 Apr 2019) | 3 lines
+Changed paths:
+   M /trunk/modules/datatext.lua
+   M /trunk/modules/micromenu.lua
+   M /trunk/modules/swing.lua
+   M /trunk/modules/tooltip.lua
+
+- Infotext: Increased Memory Infotext refresh from 10 to 100 seconds, to compensate for making the function much heavier.
+- Tooltip: WorldMapTooltip cleanup
+- Swing/Micromenu: Small bugs fixes.
+------------------------------------------------------------------------
+r906 | FireSiku | 2019-04-30 10:46:10 +0000 (Tue, 30 Apr 2019) | 1 line
+Changed paths:
+   M /trunk/tools/hideblizzard.lua
+   M /trunk/unitframes/layout/layout.lua
+
+- HideBlizzard: Added a safety check when CompactRaidFrameManager isnt loaded.
+------------------------------------------------------------------------
+r905 | chaoslux | 2019-03-13 00:37:39 +0000 (Wed, 13 Mar 2019) | 1 line
+Changed paths:
+   M /trunk/unitframes/layout/layout.lua
+
+Unitframes: Removed LOW-Strata Fix as it is not needed anymore.
+------------------------------------------------------------------------
+r904 | chaoslux | 2019-03-12 21:52:31 +0000 (Tue, 12 Mar 2019) | 1 line
+Changed paths:
+   M /trunk/modules/bags.lua
+
+Bags: Using 8.1.5 ItemButton widget type
+------------------------------------------------------------------------
+r903 | chaoslux | 2019-03-12 19:17:31 +0000 (Tue, 12 Mar 2019) | 1 line
+Changed paths:
+   M /trunk/scripts/WorldMapFix.lua
+
+WorldMap: WorldMapTooltip has been deprecated in favor of GameTooltip
+------------------------------------------------------------------------
+r902 | kitkeh | 2018-10-03 08:39:33 +0000 (Wed, 03 Oct 2018) | 1 line
+Changed paths:
+   M /trunk/modules/swing.lua
+
+Swing Timer: hopefully fix the swing timer.
+------------------------------------------------------------------------
+r901 | chaoslux | 2018-09-29 21:11:53 +0000 (Sat, 29 Sep 2018) | 1 line
+Changed paths:
+   M /trunk/modules/panels.lua
+
+Panels: Set the textures on the background layer, which would make logical sense for them to be in.
+------------------------------------------------------------------------
+r900 | chaoslux | 2018-09-28 20:59:21 +0000 (Fri, 28 Sep 2018) | 1 line
+Changed paths:
+   M /trunk/unitframes/layout/layout.lua
+
+- Unitframes: Force unitframes to render on the LOW strata to prevent issues with Blizzard frames.
+------------------------------------------------------------------------
+r899 | chaoslux | 2018-09-11 21:22:59 +0000 (Tue, 11 Sep 2018) | 1 line
+Changed paths:
+   M /trunk/modules/micromenu.lua
+
+- Added option to display Communities from micromenu. Credits to inSpired.
+------------------------------------------------------------------------
+r898 | chaoslux | 2018-09-11 20:50:47 +0000 (Tue, 11 Sep 2018) | 1 line
+Changed paths:
+   M /trunk/modules/raidmenu.lua
+
+- RaidMenu: Fix display issues when showing RaidMenu before Micromenu. Credits to inSpired
+------------------------------------------------------------------------
+r897 | chaoslux | 2018-09-11 20:46:02 +0000 (Tue, 11 Sep 2018) | 5 lines
+Changed paths:
+   M /trunk/modules/datatext.lua
+
+Infotext changes provided by inSpired:
+- EquipmentSets: Fixed "Off By One" error when retrieving equipment sets.
+- LootSpec: Fix issue with not being updated when set to "Current" and you change specialization.
+- LootSpec: Now display "Unknown" instead of throwing an error when spec data is unvaialable.
+- Mail: Added a new infotext to display mails you have and if there is new mail available. Disabled by default.
+------------------------------------------------------------------------
+
